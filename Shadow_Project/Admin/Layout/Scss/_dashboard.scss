@@ -1,0 +1,182 @@
+// --------- Dashboard Style ----------
+.analyse{
+    .card-box{
+        overflow: hidden;
+        border-radius:10px;
+        box-shadow:0 3px 5px #eaeaea;
+        padding:0 10px;
+        .row{
+            padding-top:10px;
+            padding-bottom:10px;
+            color:#fff;
+            .icon{
+                font-size:$font_size + 46px;
+                text-align:center;
+            }
+            .content{
+                text-align:right;
+                font-size:$font_size + 11px;
+                div{
+                    padding:10px 0;
+                    span{
+                        display:block;
+                    }
+                    span:last-child{
+                        font-size:$font_size + 6px;
+                    }
+                }
+            }
+
+        }
+        a{
+            display: block;
+            padding: 10px 0;
+            div.footer{
+                overflow: hidden;
+                color:#007bff;
+            }
+        }
+    }
+    div.col-lg-3:first-child .card-box{
+        border:1px solid ;
+        border-top-color: #00BCD4;
+        border-left-color: #00BCD4;
+        border-bottom-color:#2196F3;
+        border-right-color:#2196F3;
+        .row{
+            background: linear-gradient(100deg, #00BCD4, #2196F3);
+        }
+        a{
+            div.footer{
+                color:#2196F3;
+                &:hover{
+                    color:#1a81d4;
+                }
+            }
+            
+        }
+    }
+    div.col-lg-3:nth-child(2) .card-box{
+        border:1px solid;
+        border-top-color: #fb6c6c;
+        border-left-color: #fb6c6c;
+        border-bottom-color:#d00e00;
+        border-right-color:#d00e00;
+        .row{
+            background: linear-gradient(100deg, #fb6c6c, #d00e00);
+        }
+        a{
+            div.footer{
+                color:#d00e00;
+                &:hover{
+                    color:#b51105;
+                }
+            }
+        }
+    }
+    div.col-lg-3:nth-child(3) .card-box{
+        border:1px solid;
+        border-top-color: #efc136;
+        border-left-color: #efc136;
+        border-bottom-color:#ffa013;
+        border-right-color:#ffa013;
+        .row{
+            background: linear-gradient(100deg, #efc136, #ffa013);
+        }
+        a{
+            div.footer{
+                color: #ffa013;
+                &:hover{
+                    color:#d8870f;
+                }
+            }
+        }
+    }
+    div.col-lg-3:last-child .card-box{
+        border:1px solid;
+        border-top-color: #db66ef;
+        border-left-color: #db66ef;
+        border-bottom-color:#562ba2;
+        border-right-color:#562ba2;
+        .row{
+            background: linear-gradient(100deg, #db66ef, #562ba2);
+        }
+        a{
+            div.footer{
+                color:#562ba2;
+                &:hover{
+                    color:#957ebd;
+                }
+            }
+        }
+    }
+}
+.ads{
+    margin:50px 0;
+    border-radius:5px;
+    .new-ads{
+        width:100%;
+        text-align: center;
+        .header{
+            padding: 10px;
+            background: #1f99f1;
+            color: white;
+            border-radius:5px 5px 0 0;
+        }
+        .ads-body{
+            border:1px solid #1f99f1;
+            padding:10px;
+            border-radius:0 0 5px 5px;
+        }
+    }
+    
+}
+@media (max-width:440px){
+    .analyse{
+        div.col-lg-3{
+            .card-box{
+                .icon{
+                    text-align:left;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:767.98px){
+    .analyse{
+        div.col-lg-3{
+            .card-box{
+                .content,.icon{
+                    width:50%;
+                }
+            }
+        }
+    }
+}
+@media (max-width:991.98px){
+    .analyse{
+        div.col-lg-3{
+            max-width:100% !important;
+            margin-bottom:20px;
+        }
+    }
+    .orders{
+        margin:0;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .analyse{
+        div.col-lg-3{
+            max-width:100% !important;
+            margin-bottom:20px;
+            .content{
+                font-size:18px !important;
+            }
+            .icon{
+                font-size:40px !important;
+            }
+        }
+    }
+}

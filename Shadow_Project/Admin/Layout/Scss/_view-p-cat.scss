@@ -1,0 +1,12 @@
+//-------- product categroy style -------
+table{
+    th{
+        vertical-align:middle !important;
+    }
+    th.p-cat-id:first-child{
+        width:150px;
+    }
+    .delete-edit{
+        width:160px;
+    }
+}

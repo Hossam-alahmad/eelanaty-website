@@ -1,0 +1,63 @@
+// Footer Started --------------------
+.footer{
+    border-top:1px solid $forth_color;
+    @extend %padding;
+    text-align:right;
+    background-color:#fff;
+    div{
+        h4{
+            margin-bottom:15px;
+        }
+        ul{
+            li{
+                list-style:none;
+                margin-bottom:5px;
+                color:$font_color;
+                a{
+                    font-size:$letter_font;
+                    color:$font_color;
+                    text-decoration:none;
+                }
+            }
+        }
+        .links{
+            margin-bottom:50px;
+        }
+    }
+}
+footer{
+    padding: 20px 0;
+    font-size:$letter_font;
+    p{
+        margin-bottom:0;
+    }
+}
+@media (max-width:440.98px){
+    .footer{
+        div{
+            h4{
+                font-size:1.25rem;
+            }
+            ul{
+                li{
+                    font-size:$letter_font - 4px;
+                    a{
+                        font-size:$letter_font - 4px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        font-size:14px;
+    } 
+}
+@media (max-width:575.98px){
+    .footer{
+        div{
+            video{
+                margin-bottom:20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+.form-group{
+    position: relative;
+    .error{
+        border-color:red !important;
+    }
+    span{
+        color:red;
+        font-size:14px;
+    }
+}
+.personal-profile{
+    div.col-md-9{
+        div.alert{
+            p{
+                margin:0;
+            }
+        }
+        .my-account{
+            background-color:#fff;
+            @extend %border_radius;
+            .heading{
+                padding: 20px;
+                border-bottom: 1px solid #e5e5e5;
+                margin-bottom: 0;
+                h4{
+                    font-weight:400 ;
+                }
+            }
+            .menu-bar{
+                padding: 10px 20px;
+                ul{
+                    li{
+                        list-style:none;
+                        display: inline-block;
+                        
+                        a{
+                            color:$font_color;
+                            display: inline-block;
+                            padding:10px;
+                            text-decoration:none;
+                        }
+                        &:hover{
+                            background-color:$second_color;
+                        }
+                    }
+                    .active{
+                        background-color:$second_color;
+                    }
+                }
+            }
+            .info{
+                padding:20px 40px;
+                color:$font_color;
+                .row{
+                    > div.col-md-4{
+                        .user-image{
+                            border:1px solid $forth_color;
+                            position: relative;
+                            width: 150px;
+                            height: 150px;
+                            background: #2196f3;
+                            border-radius: 50%;
+                            margin: 25px auto;
+                            text-align: center;
+                            color:#fff;
+                            line-height:150px;
+                            cursor: pointer;
+                            form{
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                                height:100%;
+                                cursor: pointer;
+                                input{
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    left: 0;
+                                    outline: none;
+                                    opacity: 0;
+                                    z-index: 500;
+                                    cursor: pointer;    
+                                }
+                            }
+                            img{
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                                height:100%;
+                                border-radius:50%;
+                                cursor: pointer;
+                            }
+                            span{
+                                font-size: 80px;
+                                line-height: 100px;
+                                cursor: pointer;
+                            }
+                            &:after{
+                                content:"تغيير الصورة";
+                                position: absolute;
+                                bottom: 15px;
+                                left: -15px;
+                                line-height: 1.7;
+                                width: pad;
+                                @extend %transition;
+                                /* height: 100px; */
+                                background-color: $main_color;
+                                padding: 5px;
+                                font-size: 12px;
+                                border-radius: 20px;
+                                opacity:0;
+                            }
+                            &:hover:after{
+                                opacity:1;
+                            }
+                        }
+                    }
+                    > div.col-md-8{
+                        label{
+                            span{
+                                font-size:13px;
+                                color:$icon_color;
+                            }
+                        }
+                        .row{
+                            > div:last-of-type{
+                                label{
+                                    width:100%;
+                                }
+                                select{
+                                    display: inline-block;
+                                    width: 32.2333%;
+                                }
+                            }
+                        }
+                        input[type=submit]{
+                            margin-top:20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

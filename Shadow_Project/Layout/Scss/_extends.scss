@@ -1,0 +1,42 @@
+$logo_font:35px;
+$letter_font:18px;
+$main_color:#2196f3;
+$second_color:#f3f3f3;
+$third_color:#1f8be4;
+$forth_color:#e5e5e5;
+$font_color:#65676b;
+$icon_color:#94969c;
+$error_message:#dc3545;
+$success_message:#28a745;
+
+%border_radius{
+    border-radius:5px;
+}
+%letter_size{
+    font-size:$letter_font;
+}
+%padding{
+    padding:50px 0;
+}
+%margin_bottom{
+    margin-bottom:30px;
+}
+%transition{
+    transition:all .3s ease-in-out;
+}
+%first_char{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    /* height: 100%; */
+    //background: red;
+    /* padding: 10px 0; */
+    height: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

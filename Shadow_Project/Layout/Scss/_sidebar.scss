@@ -1,0 +1,149 @@
+// Sidebar Started --------------------
+.sidebar{
+    color:$font_color;
+    text-align:right;
+    > a{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+    form{
+        div.form-group{
+            position: relative;
+            input{
+                padding-left:45px;
+            }
+            button{
+                position: absolute;
+                bottom:0;
+                left:0;
+            }
+        }
+    }
+    .category{
+        text-align:right;
+        padding:10px 0;
+        background-color:transparent;
+        .hdr{
+            overflow: hidden;
+            font-weight:400;
+            margin-bottom:20px;
+            h5{
+                margin:0;
+            }
+            span{
+                font-weight:400;
+                display:none;
+            }
+        }
+        ul{
+            position: relative;
+            @extend %transition;
+            overflow: hidden;
+            max-height:600px;
+            li{
+                list-style:none;
+                padding:10px 5px;
+                margin:2px 0;
+                &:hover{
+                    background-color:$main_color;
+                    color:#fff;
+                    a{
+                        color:#fff;
+                        &:after{
+                            background-color:#fff;
+                        }
+                    }
+                }
+                a{
+                    position: relative;
+                    color:$font_color;
+                    text-decoration:none;
+                    display:inline-block;
+                    width:100%;
+                    padding-right:20px;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        top: 9px;
+                        right: 0;
+                        width: 7px;
+                        height: 7px;
+                        background-color:$font_color;
+                    }
+                }
+            }
+            .active{
+                background-color:$main_color;
+                color:#fff;
+                a{
+                    color:#fff;
+                    &:after{
+                        background-color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:349.98px){
+    .sidebar{
+        .category{
+            .hdr{
+                span{
+                    font-size:14px;
+                }
+            }
+        }
+    }
+
+}   
+@media (min-width:350px) and (max-width:399.98px){
+    .sidebar{
+        .category{
+            .hdr{
+                span{
+                    font-size:12px;
+                }
+            }
+        }
+    }
+
+}
+@media (min-width:400px) and (max-width:520px){
+    .sidebar{
+        .category{
+            .hdr{
+                span{
+                    font-size:14px;
+                }
+            }
+        }
+    }
+             
+}
+@media (max-width:767.98px){
+    .sidebar{
+        .category{
+            .hdr{
+                padding: 20px 5px;
+                border-radius: 5px;
+                background-color:#fff;
+                box-shadow: 0 3px 5px 0px #e5e5e5;
+                span{
+                    cursor: pointer;
+                    display: inline;
+                    &:hover{
+                        color:$main_color;
+                    }
+                }
+            }
+            hr{
+                display:none;
+            }
+            .hide-list{
+                max-height:0;
+                
+            }
+        }
+    }
+}

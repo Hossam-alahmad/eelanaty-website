@@ -1,0 +1,162 @@
+.personal-profile{
+    div.col-md-9{
+        .my-ads{
+            background-color:#fff;
+            @extend %border_radius;
+            //height:100%;
+            .heading{
+                padding: 20px;
+                border-bottom: 1px solid #e5e5e5;
+                margin-bottom: 0;
+                h4{
+                    font-weight:400 ;
+                }
+            }
+            .content{
+                padding:20px 10px;
+                a{
+                    color:$font_color;
+                    &:hover .item{
+                        top:-5px;
+                    }
+                    .item{
+                        @extend %transition;
+                        position: relative;
+                        top:0;
+                        border:1px solid $forth_color;
+                        padding:10px;
+                        .ads-title{
+                            padding:0 15px;
+                            overflow:hidden;
+                            div.user-img{
+                                padding:0;
+                                .img-box{
+                                    border:1px solid $forth_color;
+                                    position: relative;
+                                    width:50px;
+                                    height:50px;
+                                    border-radius:50%;
+                                    background-color: $main_color;
+                                    img{
+                                        position: absolute;
+                                        top:0;
+                                        left:0;
+                                        width:100%;
+                                        height:100%;
+                                        border-radius:50%;
+                                    }
+                                    span{
+                                        color: #fff;
+                                        text-align: center;
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                        line-height: 0;
+                                        position: absolute;
+                                        display: block;
+                                        /* height: 100%; */
+                                        //background: red;
+                                        /* padding: 10px 0; */
+                                        height: 10px;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+                            }
+                            div.user-info{
+                                padding-left:0;
+                                .username{
+                                    padding:5px;
+                                    p{
+                                        font-size:12px;
+                                    }
+                                }
+                            }
+                            div.watches{
+                                padding:0;
+                                text-align:left;
+                                .watch{
+                                    font-size:12px;
+                                    margin:5px 0;
+                                }
+                            }
+                        }
+                        .ads-image{
+                            position: relative;
+                            /* max-height: 500px; */
+                            height: 200px;
+                            background-color: $forth_color;
+                            img{
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                                height:100%;
+                            }
+                        }
+                    }
+                }
+                div.col-md-4:nth-of-type(n+4){
+                    margin-top:20px;
+                }
+                .no-ads{
+                    position: relative;
+                    font-size:25px;
+                    color:$font_color;
+                    margin:0 auto;
+                    p{
+                        margin:0;
+                    }
+                }
+            }
+        }
+        .pagintation{
+            text-align:right;
+            margin-top:10px;
+            a{
+                border: 1px solid #e5e5e5;
+                color:$font_color;
+                font-size:$letter_font;
+                background-color:#fff;
+                &:hover{
+                    color:$main_color;
+                }
+            }
+        }
+    }
+}
+@media (max-width:420px){
+    .my-ads{
+        .content{
+            a{
+                .item{
+                    div.user-info{
+                        padding-right:25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:575.98px){
+    .my-ads{
+        .content{
+            a{
+                .item{
+                    margin-bottom:20px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:576px) and (max-width:991.98px){
+    .my-ads{
+        .content{
+            a{
+                .item{
+                    margin-bottom:20px;
+                }
+            }
+        }
+    }
+}

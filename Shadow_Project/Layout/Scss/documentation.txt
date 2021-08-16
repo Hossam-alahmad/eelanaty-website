@@ -1,0 +1,36 @@
+/*  elanati website v1.0
+*   scss style information
+*
+*
+*
+*   for media query we have many screen
+
+    @media (max-width:349.98px){
+        // font size:
+        - li,a,input or button is 14px 
+        - p  is 16px
+        - h1 is 30px
+        - h4,h5 is 1.25 rem
+    }   
+    @media (min-width:350px) and (max-width:399.98px){
+        // font size:
+        - li,a,input or button is 12px 
+        - p  is 14px
+        - h1 is 25px
+        - h4 is 1.25 rem
+        - h5 is 1 rem
+    }
+    @media (min-width:400px) and (max-width:520px){
+        // font size:
+        - li,a,input or button is 14px 
+        - p  is 16px
+        - h1 is 30px
+        - h4,h5 is 1.25 rem
+    }
+    @media (max-width:575.98px){
+        // font size:
+        - li or a is 18px
+        - p  is 18px
+        - h1 is 35px
+        - h4 is 1.25 rem
+    }

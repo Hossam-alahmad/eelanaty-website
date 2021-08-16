@@ -1,0 +1,93 @@
+/* ------------- admin insert Style ------------------ */
+.panel{
+    .panel-body{
+        form{
+            > div{
+                position: relative;
+                > label{
+                    font-weight:700;
+                    span{
+                        color:red;
+                    }
+                }
+                input[type="radio"]{
+                    width:10px;
+                }
+                div{
+                    label{
+                        margin-right:20px;
+                    }
+                }          
+            }
+        }
+    }
+}
+.check{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: calc(1.5em + .75rem + 2px);
+    font-size:$font_size + 11;
+    color:#77c789;
+    top: 38px;
+    right: 10px;
+    transition: opacity .3s ease-in-out;
+    opacity:0;
+}
+.checked{
+    opacity:1 !important;
+}
+.notification{
+    margin-top: 10px;
+    background-color: #ea3f3f;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display:none;
+}
+.invalid{
+    display:block;
+}
+.test-pass{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* height: 5px; */
+    margin-top: 10px;
+    display: none;
+    span.test{
+        width: 80px;
+        height: 5px;
+        //display: inline-block;
+        float: left;
+        opacity:0;
+    }
+    span.test:first-child{
+        background-color: red;
+    }
+    span.test:nth-child(2){
+        background-color: orange;
+    }
+    span.test:last-child{
+        background-color: green;
+    }
+
+}
+.show-box{
+    display:block !important;
+}
+.eye{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 17px;
+    /* background-color: red; */
+    padding: 10px;
+    border-radius: 5px;
+    top: 31px;
+    color:rgba(52,58,64,.5);
+    cursor: pointer;
+    &:hover{
+        color:rgba(52,58,64,1);
+    }
+}

@@ -1,0 +1,70 @@
+// Register Started --------------------
+.register{
+    @extend %padding;
+    text-align:right;
+    padding-left:16px;
+    padding-right:16px;
+    background-color:#fff;
+    div.row{
+        div{
+            h2{
+                margin-bottom:20px;
+                font-weight:400;
+                color:$font_color;
+            }
+            .form-group{
+                input[name=pass]{
+                    padding-left:36px;
+                }
+            }
+            .form-group:last-of-type{
+                margin-top:40px;
+                overflow:hidden;
+                p{
+                    width:65%;
+                    font-size:12px;
+                }
+                input{
+                    background-color:$main_color;
+                    border-color:$main_color;
+                    &:hover{
+                        background-color:$third_color;
+                        border-color:$third_color;
+                    }
+                }
+            }
+        }
+        div.col-md-6:last-of-type{
+            .img-box{
+                position: relative;
+                min-height:400px;
+                img{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width:767.98px){
+    .register{
+        .row{
+            flex-direction:column-reverse;
+            div.col-md-6{
+                margin-bottom:20px;
+                .img-box{
+                    min-height:200px !important;
+                    img{
+                        width:80% !important;
+                        margin:0 10% !important;
+                    }
+                }
+            }
+        }
+    }
+}

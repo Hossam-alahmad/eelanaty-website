@@ -1,0 +1,82 @@
+// users Started --------------------
+.users{
+    padding:50px 16px;
+    .all-users{
+        background-color:#fff;
+        border-radius:5px;
+        h4{
+            padding: 20px 10px;
+            border-bottom: 1px solid $forth_color;
+            margin-bottom:0;
+            text-align:right;
+            font-weight:400;
+        }
+        .content{
+            padding:0 10px 40px 10px;
+            .item{
+                position: relative;
+                border: 1px solid $forth_color;
+                padding:10px;
+                text-align: center;
+                @extend %transition;
+                margin-top:100px;
+                .user-img{
+                    width: 100px;
+                    height: 100px;
+                    background: $main_color;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: relative;
+                    margin: 0 auto;
+                    top: -60px;
+                    margin-bottom: -50px;
+                    border:1px solid $forth_color;
+                    img{
+                        position: absolute;;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        border-radius:50%;
+                    }
+                    span{
+                        @extend %first_char;
+                        font-size:40px;
+                    }          
+                }
+                .username{
+                    margin-bottom:20px;
+                    div{
+                        span:first-child{
+                            margin-left:10px;
+                        }
+                        span{
+                            color:$font_color;
+                            font-size:13px;
+                        }
+                        span{
+                            i.user-connection{
+                                color:#ddd;
+                            }
+                            .offline{
+                                color:$forth_color; 
+                            }
+                            .online{
+                                color:#28a745 !important;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: 0px 24px 43px -18px #e5e5e5;
+                }   
+            }
+        }
+    }
+}
+@media (max-width:575.98px){
+    .users{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+}

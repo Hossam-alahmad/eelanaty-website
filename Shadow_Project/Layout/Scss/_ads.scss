@@ -1,0 +1,15 @@
+// Ads Started --------------------
+.ads-box{
+    @extend %padding;
+    padding-left:16px;
+    padding-right:16px;
+    
+}
+@media (max-width:575.98px){
+    .ads-box{
+        padding-left:0;
+        padding-right:0;
+    }
+}
+@import "_sidebar.scss";
+@import "_all-ads.scss";

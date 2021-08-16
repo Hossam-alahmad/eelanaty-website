@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    direction: rtl;
+}
+body{
+    
+    background-color:#efeff0;
+    left:0;
+}
+.shift-body{
+    left:300px;
+}
+@import "_extend.scss";
+.btn-primary{
+    color:#fff !important;
+    background-color:$main_color !important;
+    border-color:$main_color !important;
+    
+}
+.btn-primary:hover{
+    background-color:$third_color !important;
+    border-color:$third_color !important;
+}
+.form-control:focus{
+    box-shadow:none;
+}
+.form-group{
+        position: relative;
+        .error{
+            border-color:$error_message !important;
+        }
+        span{
+            color:$error_message;
+            font-size:14px;
+        }
+        i.fa{
+            position: absolute;
+            /* top: 0; */
+            padding: 9px;
+            top: 33px;
+            left: 0;
+            font-size: 18px;
+            border-radius: 5px 0 0 5px;
+            cursor: pointer;
+            color:$font_color;
+            &:hover{
+                color:#000;
+            }
+        }
+    }
+    .overlay-body{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.4);
+        @extend %transition;
+        opacity:0;
+        z-index: -1;
+    }
+    .show-overlay{
+        opacity:1;
+        z-index: 1;
+    }
+@import "_login.scss";
+@import "_notification.scss";
+@import "_index.scss";
+@import "_dashboard.scss";
+@import "_sidebar.scss";
+@import "_view-ads.scss";
+@import "_view.scss";
+@import "_edit-images.scss";
+@import "_account.scss";

@@ -1,0 +1,107 @@
+// categories Started --------------------
+.categories{
+    padding:50px 16px;
+    .container-fluid{
+        > .title{
+            text-align:center;
+            color:$font_color;
+            width:50%;
+            margin:0 auto;
+            line-height:1.7;
+            margin-bottom:50px;
+            h2{
+                font-size:30px;
+                font-weight:500;
+                display:block;
+                margin-bottom:10px;
+            }
+        }
+        form{
+            margin-bottom:20px;
+            div{
+                position: relative;
+                input{
+                    height:50px;
+                    padding-left:110px;
+                    font-size:$letter_font;
+                }
+                a{
+                    color:#fff;
+                    background-color:$main_color;
+                    border-color:$main_color;
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    height:100%;
+                    line-height: 30px;
+                    font-size: $letter_font;
+                    width: 100px;
+                    text-decoration:none;
+                    &:hover{
+                        background-color:$third_color;
+                        border-color:$third_color;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        div.row{
+            a{
+                text-decoration:none;
+                .item{
+                    position: relative;
+                    margin-bottom:20px;
+                    top:0;
+                    @extend %transition;
+                    background-color:#fff;
+                    padding:10px;
+                    text-align:center;
+                    border:1px solid $forth_color;
+                    .img-box{
+                        position: relative;
+                        width: 75px;
+                        height: 75px;
+                        margin: 0 auto;
+                        margin-bottom:10px;
+                        img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h4{
+                        color:#212529;
+                    }
+                    p{
+                        color:$font_color;
+                    }
+                }
+                &:hover .item{
+                    top:-10px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:799.98px){
+    .categories{
+        .container-fluid{
+            > .title{
+                width:90% !important;
+            }
+        }
+    }
+
+}
+@media (max-width:991.98px){
+    .categories{
+        .container-fluid{
+            > .title{
+                width:70%;
+            }
+        }
+    }
+
+}

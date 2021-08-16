@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    direction: rtl;
+}
+body{
+    @extend %transition;
+    position: relative;
+    overflow-x:hidden;
+    background-color:#efeff0;
+    left:0;
+}
+.shift-body{
+    left:300px;
+}
+@import "_extends.scss";
+.btn-primary{
+    color:#fff !important;
+    background-color:$main_color !important;
+    border-color:$main_color !important;
+    
+}
+.btn-primary:hover{
+    background-color:$third_color !important;
+    border-color:$third_color !important;
+}
+.form-control:focus{
+    box-shadow:none;
+}
+.register,.login,.insert-ads,.edit-ads{
+    .form-group{
+        position: relative;
+        .error{
+            border-color:red !important;
+        }
+        span{
+            color:red;
+            font-size:14px;
+        }
+        i.fa{
+            position: absolute;
+            /* top: 0; */
+            padding: 9px;
+            top: 33px;
+            left: 0;
+            font-size: 18px;
+            border-radius: 5px 0 0 5px;
+            cursor: pointer;
+            color:$font_color;
+            &:hover{
+                color:#000;
+            }
+        }
+    }
+}
+.page-fixed{
+    padding-top:150px !important;
+}
+@import "_navbar.scss";
+@import "_index.scss";
+@import "_register.scss";
+@import "_login.scss";
+@import "_ads.scss";
+@import "_categories.scss";
+@import "_users.scss";
+@import "_insert_ads.scss";
+@import "_show-ads.scss";
+@import "_notification.scss";
+@import "_edit-ads.scss";
+@import "_chat.scss";
+@import "_privacy-policy.scss";
+@import "_footer.scss";
+
+
+
+
+
+@media (max-width:349.98px){
+    h2{
+        font-size:1.5rem !important;
+    }
+    input,label,a,button{
+        font-size:14px !important;
+    }
+    p{
+        font-size:16px !important;
+    }
+    h5{
+        font-size:1.25rem;
+    }
+    h1,.h1{
+        font-size:30px !important;
+    }
+    .notification{
+        width:75%;
+        p{
+            font-size:17px !important;
+        }
+    }
+}   
+@media (min-width:350px) and (max-width:399.98px){
+    h1,.h1{
+        font-size:25px !important;
+    }
+    h2{
+        font-size:1.25rem !important;
+    }
+    h5{
+        font-size:1rem;
+    }
+    input,label,a,button{
+        font-size:16px !important;
+    }
+    p{
+        font-size:16px !important;
+    }
+    .notification{
+        width:70%;
+        p{
+            font-size:18px !important;
+        }
+    }
+}
+@media (min-width:400px) and (max-width:450px){
+    .notification{
+        i{
+            font-size:18px !important;
+        }
+        p{
+            font-size:14px !important;
+        }
+    }
+
+}
+@media (min-width:400px) and (max-width:520px){
+    h1,.h1{
+        font-size:30px !important;
+    }
+    h2{
+        font-size:1.5rem !important;
+    }
+    h5{
+        font-size:1.25rem;
+    }
+    input,label,a,p,button{
+        font-size:16px !important;
+    }
+    p{
+        font-size:16px !important;
+    }
+    .notification{
+        i{
+            font-size:20px;
+        }
+    }
+}
+@media (max-width:575.98px){
+    .container-fluid{
+        padding:0;
+        overflow: hidden;
+    }
+    .shift-body{
+        left:225px;
+    }
+    h4{
+        font-size:1.25rem !important;
+    }
+    .notification{
+        text-align: center;
+        i{
+            font-size:30px;
+        }
+        p{
+            font-size:20px;
+        }
+    }
+}

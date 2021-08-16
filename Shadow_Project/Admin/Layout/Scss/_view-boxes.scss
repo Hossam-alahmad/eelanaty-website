@@ -1,0 +1,50 @@
+.boxes{
+    border:1px solid #ddd;
+    padding:10px;
+    margin: 0;
+    .section-box{
+        padding: 0;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        border-radius: 10px;
+        .header{
+            text-align: center;
+            padding:10px;
+            background-color: #1f99f1;
+            color: #fff;
+        }
+        p{
+            padding:5px 10px;
+            word-break:break-all;
+        }
+        div{
+            overflow: hidden;
+            padding: 10px;
+            border-top:1px solid #ddd;
+        }
+    }
+    .section-box:not(:last-child){
+        margin-right:2%;
+    }
+}
+.col-lg-4{
+    flex: 1 0 32% !important;
+    max-width: 32% !important;
+}
+
+@media (max-width:568.98px){
+    .boxes{
+        .col-lg-4{
+            flex: 1 0 100% !important;
+            max-width:100% !important;
+            margin-bottom:20px;
+        }
+    }
+}
+@media (min-width:767.98px) and (max-width:992px){
+    .boxes{
+        .col-lg-4{
+            
+        }
+    }
+}

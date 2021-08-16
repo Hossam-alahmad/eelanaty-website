@@ -1,0 +1,14 @@
+// --------- Index Style ----------
+.page-wrapper{
+    padding:20px 0;
+    float: left;
+    width:80%;
+}
+.page-fixed{
+    padding:60px 0 !important;
+}
+@media (max-width:767.98px){
+    .page-wrapper{
+        width:100%;
+    }
+}

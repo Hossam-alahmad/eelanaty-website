@@ -1,0 +1,17 @@
+// Privacy-policy Style -----------
+.privacy-policy,.condition-terms{
+    margin:50px 26px;
+    padding:50px 16px;
+    background-color:#fff;
+    @extend %border_radius;
+    
+    .view{
+        text-align:right;
+        p,li{
+            color:$font_color;
+        }
+        li{
+            list-style:inside;
+        }
+    }
+}

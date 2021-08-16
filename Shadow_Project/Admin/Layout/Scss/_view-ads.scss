@@ -1,0 +1,99 @@
+//-------- Product style -------
+h4{
+    margin-bottom:20px;
+}
+.table-product{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    .search{
+        width:30%;
+        position: relative;
+        margin-bottom:20px;
+        input{
+            width: 100%;
+            padding-right: 50px;
+        }
+        button{
+            position: absolute;
+            top:0;
+            right: 0;
+            background-color: #007bff;
+            transition:all .2s ease-in-out;
+            color: #fff;
+            padding: 11px;
+            border-radius: 0 5px 5px 0;
+            text-align: center;
+            width: 40px;
+            border:none;
+            outline:none;
+            &:hover{
+                background-color:#2b66af;
+            }
+        }
+        
+    }
+    table{
+
+        th{
+            vertical-align: middle !important;
+        }
+        td{
+            vertical-align: middle !important;
+            font-size:$font_size;
+            button{
+                font-size:$font_size;
+            }
+            a{
+                text-decoration:none;
+            }
+        }
+    }
+}
+input.edit-btn{
+    margin-top:20px;
+}
+.pagintation{
+    margin-top:20px;
+    a{
+        border: 1px solid $forth_color;
+        color: $font_color;
+        font-size: 18px;
+        background-color: #fff;
+        &:hover{
+            color:$main_color;
+        }
+    }
+}
+@media (max-width:440px){
+    .header{
+        .page-header{
+            font-size: 1.5rem !important;
+        }
+    }
+}
+@media (max-width:575.98px){
+    .header{
+        .page-header{
+            font-size: 2rem;
+        }
+    }
+    .table-product{
+        .search{
+            width:100%;
+        }
+    }
+    .alert{
+        font-size:12px;
+    }
+}
+@media (max-width:767.98px){
+    .table-product{
+        .search{
+            width:50%;
+        }
+    }
+    .alert{
+        font-size:14px;
+    }
+}

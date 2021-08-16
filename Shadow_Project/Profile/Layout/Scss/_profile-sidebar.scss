@@ -1,0 +1,84 @@
+// Profile Sidebar Style
+.personal-profile{
+    padding:50px 16px;
+    text-align:right;
+    .row{
+        div.col-md-3{
+            .profile-sidebar{
+                
+                .user-picture{
+                    text-align:center;
+                    .img-box{
+                        border:1px solid $forth_color;
+                        position: relative;
+                        width: 150px;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        background-color: #2196f3;
+                        height: 150px;
+                        line-height: 150px;
+                        color: #fff;
+                        margin-bottom:20px;
+                        img{
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            width:100%;
+                            height:100%;
+                            border-radius:50%;
+                        }
+                        span{
+                            @extend %first_char;
+                            font-size:80px;
+                        }
+                    }
+                    .user-name{
+                        color:$font_color;
+                    }
+                }
+                .sections{
+                    @extend %border_radius;
+                    background-color:#fff;
+                    margin:40px 0;
+                    ul{
+                        padding:10px 0;
+                        li{
+                            list-style:none;
+                            font-size:$letter_font;
+                            a{
+                                display: inline-block;
+                                width:100%;
+                                padding:10px 20px;
+                                color:$font_color;
+                                text-decoration:none;
+                                i{
+                                    color:$icon_color;
+                                    margin-left:10px;
+                                }
+                            }
+                            &:hover{
+                                background-color:$main_color;
+                                a{
+                                    color:#fff;
+                                    i{
+                                        color:#fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:575.98px){
+    .personal-profile{
+        padding-left:0;
+        padding-right:0;
+    }
+    input[type=submit]{
+        width:100%;
+    }
+}

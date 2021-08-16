@@ -1,0 +1,46 @@
+.personal-profile{
+    div.col-md-9{
+        .balance{
+            background-color:#fff;
+            @extend %border_radius;
+            height:100%;
+            .heading{
+                padding: 20px;
+                border-bottom: 1px solid #e5e5e5;
+                margin-bottom: 0;
+                h4{
+                    font-weight:400 ;
+                }
+            }
+            .content{
+                padding:20px 10px;
+                text-align:center;
+                .row{
+                    div.col-md-4{
+                        h6{
+                            color:$font_color;
+                        }
+                        h1{
+                            color:$main_color;
+                        }
+                    }
+                    div.col-md-4:not(:last-child){
+                        border-left:1px solid $main_color;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:767.98px){
+    .personal-profile{
+        .balance{
+            .content{
+                div.col-md-4{
+                    border-left:none !important;
+                    margin-bottom:20px;
+                }
+            }
+        }
+    }
+}

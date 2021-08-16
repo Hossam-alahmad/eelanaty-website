@@ -1,0 +1,25 @@
+//-------- login style -------
+body{
+    background-color:#f1f1f1;
+    text-align:right;
+    color:$font_color;
+    .login-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 5px #ccc;
+        .header{
+            margin-bottom:50px;
+            font-weight:400;
+            color:$font_color;
+            text-align:center;
+        }
+        
+    }
+}
